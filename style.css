@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    border: none;
+}
+
+
+.container, 
+.tarefas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    margin-bottom: 10px;
+    margin-top: 50px;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 60px;
+}
+
+.container form {
+    padding: 20px 20px;
+    display: flex;
+    border-bottom: 10px solid lightslategray;
+
+}
+
+.container form input {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    text-align: start;
+    margin-right: 30px;
+    border-bottom: 2px dashed black;
+
+}
+
+.container form button {
+    border-bottom: 2px dashed black;
+    cursor: pointer;
+}
+
+.tarefas, 
+.tarefas ul li {
+    text-transform: uppercase;
+    cursor: pointer;
+   /* display: none;  */
+   list-style: none;
+}
+
+.tarefas ul li:focus {
+    text-decoration: line-through;
+}
+
+
